@@ -1,5 +1,9 @@
 # 🧭 Build Your Own Career Board
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gokudballz/career-board-workshop/blob/main/career_board_workshop.ipynb)
+
+**▶️ Run the workshop:** https://colab.research.google.com/github/gokudballz/career-board-workshop/blob/main/career_board_workshop.ipynb
+
 A hands-on GHC workshop: build a small **multi-agent** system that works your job search.
 A **Sourcer** finds roles, a **Fit Scorer** ranks them against your profile, and a **Tailor**
 drafts a pitch for the best ones — an **Orchestrator** runs them in order and updates a shared

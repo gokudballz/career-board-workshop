@@ -1,0 +1,7 @@
+# never commit secrets
+*.env
+.env
+secrets*
+*api_key*
+.ipynb_checkpoints/
+__pycache__/

@@ -9,6 +9,8 @@ A **Sourcer** finds roles, a **Fit Scorer** ranks them against your profile, and
 drafts a pitch for the best ones — an **Orchestrator** runs them in order and updates a shared
 **board**.
 
+![The career board running end to end](docs/career-board-demo.gif)
+
 ## Run it (attendees)
 
 1. Open `career_board_workshop.ipynb` in **Google Colab**

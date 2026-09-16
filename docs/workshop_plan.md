@@ -98,6 +98,9 @@ Reference these on the closing slide; hit bias + fabrication live, mention the r
 ## Prep checklist (before the day)
 
 - [ ] Build + test the Colab notebook end to end on a fresh Google account (simulates an attendee).
+- [ ] **Model backend: Groq (open-weight models), free tier ~14,400 req/day.** A full notebook
+      run is ~47 calls. *Learned the hard way: Gemini's free tier caps some models at 20
+      requests/day — one run exhausts it. Always check the daily quota, not just "is it free".*
 - [ ] Provide API access with **zero personal-key friction**: pre-provisioned key via a proxy, a workshop key with a rate cap, or a free-tier model. Decide this early — it's the #1 thing that breaks live coding.
 - [ ] Add a **"✅ Solution"** cell under every build round (collapsed).
 - [ ] **Pre-build the bias-audit pair:** two near-identical sample résumés differing by one variable, so the demo works even if a live edit fumbles. Test that the score/rationale actually shifts before the day.

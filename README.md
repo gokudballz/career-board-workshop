@@ -13,7 +13,7 @@ drafts a pitch for the best ones — an **Orchestrator** runs them in order and 
 
 1. Open `career_board_workshop.ipynb` in **Google Colab**
    ([colab.research.google.com](https://colab.research.google.com) → *File ▸ Open notebook ▸ GitHub* → paste this repo URL).
-2. Get a **free** Gemini API key (no credit card): https://aistudio.google.com/app/apikey
+2. Get a **free** Groq API key (no credit card): https://console.groq.com/keys
 3. Run the cells top to bottom. Cells marked **✏️ YOUR TURN** are where you write a prompt;
    each has a collapsed **✅ Solution** cell below it.
 
@@ -37,8 +37,11 @@ baked into the notebook.
 
 ## Notes
 
-- Default model: `gemini-3.6-flash` (free tier). If Google rotates names, change `MODEL` in the
-  setup cell (e.g. `gemini-2.5-flash`).
+- Runs on **open-weight models** (Llama / Qwen / GPT-OSS) served by Groq. Default:
+  `llama-3.3-70b-versatile`. Groq can retire model names without notice, so the Preflight cell
+  verifies the model and auto-switches to a working fallback if needed.
+- **Free tier is ~14,400 requests/day** — a full run of this notebook is ~47 calls, so there's
+  plenty of headroom for a workshop. `ask_llm` also retries with backoff on rate limits.
 - **Never commit API keys.** The notebook reads the key from a Colab secret or a prompt at runtime.
 
 ---
